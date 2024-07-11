@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "firstName": "gaurav satkar",
+      "Age": 23,
+      "salary": 12,
+      "id": "7338"
+    },
+    {
+      "firstName": "Sam Jhonson",
+      "Age": 45,
+      "salary": 13,
+      "id": "27b9"
+    },
+    {
+      "id": "7328",
+      "firstName": "mark anderson",
+      "Age": 28,
+      "salary": 10
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+<div mat-dialog-title>
+    <h1>Employee Form</h1>
+  </div>
+  <form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+      <!-- Want to update the name also just remove the comment after that change will reflect on screen
+       <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>First Name</mat-label>
+          <input matInput type="text" placeholder="First Name_Last Name" formControlName="firstName">
+        </mat-form-field>
+      </div> -->
+  
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Age</mat-label>
+          <input matInput type="number" placeholder="Age" formControlName="Age">
+        </mat-form-field>
+      </div>
+  
+      <div class="row">
+        <mat-form-field appearance="outline">
+          <mat-label>Salary</mat-label>
+          <input matInput type="number" placeholder="Salary" formControlName="salary">
+          <mat-hint>In rupees</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div mat-dialog-actions class="action">
+      <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+      <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    </div>
+  </form>
+  
